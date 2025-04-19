@@ -1,0 +1,18 @@
+let users = {
+    name: "fateme",
+    lastname:"ayoobi",
+    city: "mashhad",
+    age: null,
+    email: undefined,
+};
+
+console.log("Before:", users);
+
+
+for (const key in users) {
+    if (users[key] === null || users[key] === undefined) {
+        delete users[key];
+    }
+}
+
+console.log("After:", users);
