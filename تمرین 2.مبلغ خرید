@@ -1,0 +1,14 @@
+const neworders={
+    laptop:{count:3,price:10000,model:"s510",name:"lenovo"},
+    pen:{count:10,price:20000,model:"s125",name:"pen"},
+    book:{count:5,price:7000,model:"a20",name:"book"}
+}
+
+let kol=0;
+for(const i in neworders){
+    neworders[i].price+=10
+        kol += neworders[i].price * neworders[i].count;
+}
+    
+console.log(neworders)
+console.log("مبلغ کل",kol)
