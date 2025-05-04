@@ -1,0 +1,10 @@
+function merge(obj1, obj2) {  
+  for (const key in obj2) {  
+    obj1[key] = obj2[key];  
+  }  
+  console.log(obj1);  
+} 
+const a = { name: "fateme", age: 22 };  
+const b = { job: "student", city: "mashad" };  
+
+merge(a, b);  

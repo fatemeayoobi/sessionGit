@@ -1,0 +1,10 @@
+function max(araye) {
+    let big=araye[0]
+    for(let num of araye){
+        if(num>big){
+            big=num
+        }
+    }
+    console.log("بزرگترین عدد:",big)
+}
+max([7,30,1,29])
